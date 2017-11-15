@@ -62,6 +62,7 @@ class UnorderedList:
         return found
 
     def remove(self, item):
+        #1 链表为空   2为头结点  3普通节点
         current = self.head
         previous = None
         found = False
