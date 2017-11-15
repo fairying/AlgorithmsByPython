@@ -32,6 +32,16 @@ class UnorderedList:
         temp = Node(item)
         temp.setNext(self.head)
         self.head = temp
+       
+    def add1(self,item):
+        temp=Node(item)
+        if self.head==None:
+            self.head=temp
+            return
+        current=self.head
+        while(current.next!=None):
+            current=current.getNext()
+        current.setNext(temp)
 
     def size(self):
         current = self.head
